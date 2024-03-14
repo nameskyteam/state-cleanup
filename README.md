@@ -6,7 +6,7 @@ Clean the contract state using [NEAR CLI JS](https://github.com/near/near-cli)
     ```shell
     make all
     ```
-2. Deploy wasm to your account (e.g. `example.near`)
+2. Deploy wasm to your account (e.g. example.near)
     ```shell
     near deploy example.near ./res/state_cleanup.wasm --networkId mainnet
     ```
@@ -14,7 +14,7 @@ Clean the contract state using [NEAR CLI JS](https://github.com/near/near-cli)
     ```shell
     near storage example.near --finality optimistic --networkId mainnet
     ```
-4. Call `clean` method on `example.near`
+4. Call the clean method on example.near
     ```shell
     near call example.near clean '{"keys":[<base64 state keys>]}' --networkId mainnet --account-id example.near --gas 300000000000000
     ```
